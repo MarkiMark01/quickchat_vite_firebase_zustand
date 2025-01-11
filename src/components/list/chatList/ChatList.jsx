@@ -5,10 +5,12 @@ const ChatList = () => {
     <section className="chatList">
       <div className="search">
         <div className="searchBar">
-          <img src="./search.png" alt="search" />
+          <img src="./search.png" alt="search" className="iconSearch"/>
           <input type="text" placeholder="Search" />
         </div>
-        <img src="./plus.png" alt="Plus" />
+        <div className="plus">
+        <img src="./plus.png" alt="Plus" className="add"/>
+        </div>
       </div>
     </section>
   );
