@@ -1,13 +1,11 @@
-
-
-import './list.css';
-
+import "./list.css";
+import ChatList from "./chatList/ChatList";
 
 const List = () => {
-return(
-    <section className="List">
-
+  return (
+    <section className="list">
+      <ChatList />
     </section>
-)
-}
+  );
+};
 export default List;
