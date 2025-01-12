@@ -3,43 +3,45 @@ import "./detail.css";
 const Detail = () => {
   return (
     <section className="detail">
-      <div className="user">
-        <img src="./avatar.png" alt="Avatar" />
-        <h2>Jane Doe</h2>
+      <div className="userd">
+        <img src="./avatar.png" alt="Avatar" className="userAvatar"/>
+        <h2 className="userdTitle">Jane Doe</h2>
         <p>Lorem ipsum dolor sit amet</p>
       </div>
       <div className="info">
         <div className="option">
           <div className="title">
             <span>Chat Settings</span>
-            <img src="./arrowUp.png" alt="ArrowUp" />
+            <img src="./arrowUp.png" alt="ArrowUp" className="titleImg"/>
           </div>
         </div>
         <div className="option">
           <div className="title">
-            <span>Privacy % help</span>
-            <img src="./arrowUp.png" alt="ArrowUp" />
+            <span>Privacy & help</span>
+            <img src="./arrowUp.png" alt="ArrowUp" className="titleImg"/>
           </div>
         </div>
         <div className="option">
           <div className="title">
             <span>Shared photos</span>
-            <img src="./arrowDown.png" alt="ArrowUp" />
+            <img src="./arrowDown.png" alt="ArrowUp" className="titleImg"/>
           </div>
           <div className="photos">
             <div className="photoItem">
-              <img src="" alt="" />
-              <span>photo_2024_2.png</span>
+              <div className="photoDetail">
+                <img src="" alt="" className="photoDetailImg"/>
+                <span className="photoDetailSpan">photo_2024_2.png</span>
+              </div>
             </div>
-            <img src="./download.png" alt="download" />
+            <img src="./download.png" alt="download" className="titleImg"/>
           </div>
         </div>
         <div className="option">
           <div className="title">
             <span>Shared Files</span>
-            <img src="./arrowUp.png" alt="ArrowUp" />
+            <img src="./arrowUp.png" alt="ArrowUp" className="titleImg"/>
           </div>
-          <button>Block User</button>
+          <button className="optionBtn">Block User</button>
         </div>
       </div>
     </section>
