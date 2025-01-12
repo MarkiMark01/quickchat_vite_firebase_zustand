@@ -107,7 +107,7 @@
   bottom: 50px;
   left: 0;
 }
-/* .message {
+.message {
   display: flex;
   max-width: 70%;
   gap: 20px;
@@ -153,4 +153,4 @@ font-weight: 300;
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
-} */
+}
