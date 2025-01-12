@@ -50,7 +50,9 @@ const Chat = () => {
             alt="Emoji"
             onClick={() => setOpen((prev) => !prev)}
           />
+          <div className="picker">
           <EmojiPicker open={open} onEmojiClick={handleEmoji} />
+          </div>
         </div>
         <button className="sendButton">Send</button>
       </div>
