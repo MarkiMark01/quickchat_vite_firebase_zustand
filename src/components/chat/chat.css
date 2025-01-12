@@ -1,5 +1,71 @@
-.chat{
-    flex: 4;
-    border-left: 1px solid #dddddd35;
-    border-right: 1px solid #dddddd35;
+.chat {
+  flex: 4;
+  border-left: 1px solid #dddddd35;
+  border-right: 1px solid #dddddd35;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dddddd35;
+  padding: 20px;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.imgAva {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.firstname {
+  font-size: 18px;
+  font-weight: bold;
+}
+.text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #a5a5a5;
+}
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-bottom: 1px solid #dddddd35;
+  padding: 20px;
+}
+.bottomIcons {
+  display: flex;
+  gap: 20px;
+}
+.bottomIcons_img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.bottomInput {
+  flex: 1;
+  background: rgba(17, 25, 40, 0.5);
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px;
+}
+.sendButton{
+    background-color: #5183fe;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
