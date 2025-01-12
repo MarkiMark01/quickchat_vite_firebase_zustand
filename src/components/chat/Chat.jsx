@@ -32,18 +32,20 @@ const Chat = () => {
       </div>
       <div className="center">
         <div className="message">
-          <img src="./avatar.png" alt="Avatar" className="messageImg"/>
+          <img src="./avatar.png" alt="Avatar" className="messageImg" />
           <div className="texts">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
           <span className="time">1 min</span>
         </div>
         <div className="message own">
-          <img src="" alt="" className="ownImg"/>
-          <div className="texts">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div style={{flexDirection: 'column'}}>
+            <img src="" alt="" className="ownImg" />
+            <div className="texts">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
           </div>
-          <span className="time">1 min</span>
+          <span className="timeown">1 min</span>
         </div>
       </div>
       <div className="bottom">
