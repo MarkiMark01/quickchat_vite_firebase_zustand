@@ -8,8 +8,8 @@ const Chat = () => {
   const [text, setText] = useState("");
 
   const handleEmoji = (e) => {
-    setText(prev => prev + e.emoji)
-    setOpen(false)
+    setText((prev) => prev + e.emoji);
+    setOpen(false);
   };
 
   return (
@@ -30,7 +30,22 @@ const Chat = () => {
           <img src="./info.png" alt="Info" />
         </div>
       </div>
-      <div className="center"></div>
+      <div className="center">
+        <div className="message">
+          <img src="./avatar.png" alt="Avatar" className="messageImg"/>
+          <div className="texts">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <span className="time">1 min</span>
+        </div>
+        <div className="message own">
+          <img src="" alt="" className="ownImg"/>
+          <div className="texts">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <span className="time">1 min</span>
+        </div>
+      </div>
       <div className="bottom">
         <div className="bottomIcons">
           <img src="./img.png" alt="img" className="bottomIcons_img" />
@@ -51,7 +66,7 @@ const Chat = () => {
             onClick={() => setOpen((prev) => !prev)}
           />
           <div className="picker">
-          <EmojiPicker open={open} onEmojiClick={handleEmoji} />
+            <EmojiPicker open={open} onEmojiClick={handleEmoji} />
           </div>
         </div>
         <button className="sendButton">Send</button>
