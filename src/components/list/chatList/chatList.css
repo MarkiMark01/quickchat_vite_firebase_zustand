@@ -1,50 +1,101 @@
-.chatList{
-    .search{
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        padding: 20px;
-    }
+.chatList {
+    height: 510px; 
+    overflow: auto; 
+  }
+  
 
-    .searchBar{
-        display: flex;
-        align-items: center;
-        flex: 1;
-        gap: 20;
-        border-radius: 10px;
-        background-color: rgba(17, 25, 40, 0.5);
+  .chatList::-webkit-scrollbar {
+    width: 8px;
+    height: 8px; 
+  }
+  
+  .chatList::-webkit-scrollbar-thumb {
+    background: rgba(30, 35, 40, 0.8);
+    border-radius: 10px; 
+  }
+  
+  .chatList::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+  
+  .chatList::-webkit-scrollbar-track {
+    background: rgba(200, 200, 200, 0.5);
+    border-radius: 10px; 
+  }
+  
 
-        input{
-            background-color: transparent;
-            border: none;
-            outline: none;
-            color: white;
-            flex: 1;
-            width: 30px;
-            height: 30px;
-        }
-        .iconSearch{
-            width: 20px;
-            height: 20px;
-            padding: 4px;
-        }
-        
-    }
-    .plus{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        width: 28px;
-        height: 28px;
-        background-color: rgba(17, 25, 40, 0.5);
+.search{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
 
-        .add{
-            width: 16px;
-            height: 16px;
-            padding: 0;
-            margin-left: 1px;
-            cursor: pointer;
-        }
-    }
+.searchBar{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 20;
+    border-radius: 10px;
+    background-color: rgba(49, 55, 66, 0.5);
+}
+input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    flex: 1;
+    width: 30px;
+    height: 30px;
+}
+.iconSearch{
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+}
+.plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(17, 25, 40, 0.5);
+}
+
+.add{
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    gap: 20;
+    padding: 20px;
+    border-bottom: 1px solid #dddddd35;
+    cursor: pointer;    
+}
+
+.itemsImg {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-right: 15px;
+  }
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+span{
+    font-weight: 500;
+}
+p{
+    font-size: 14px;
+    font-weight: 300;
 }

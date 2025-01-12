@@ -1,20 +1,26 @@
-*,::before, ::after{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-  background-image: url('/public/bg.jpg');
+body {
+  font-family: "Roboto", sans-serif; 
+  font-weight: 400; 
+  font-optical-sizing: auto;
+  color: white;
+  background-image: url('/bg.jpg');
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  color: white;
 }
 
-.container{
+.container {
   display: flex;
+  justify-content: space-between;
   width: 80vw;
   height: 90vh;
   background-color: rgba(17, 25, 40, 0.75);
@@ -22,3 +28,4 @@ body{
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
+
